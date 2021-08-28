@@ -1,0 +1,1 @@
+# SM Exenstion for Lua Language Server
