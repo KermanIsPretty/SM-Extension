@@ -3,6 +3,174 @@
 
 SurvivalGame = false
 
+---@class sm
+sm = {}
+
+---@class physics
+sm.physics = {}
+
+---@class terrainData
+sm.terrainData = {}
+
+---@class json
+sm.json = {}
+
+---@class noise
+sm.noise = {}
+
+---@class util
+sm.util = {}
+
+---@class projectile
+sm.projectile = {}
+
+---@class melee
+sm.melee = {}
+
+---@class game
+sm.game = {}
+
+---@class creation
+sm.creation = {}
+
+---@class cell
+sm.cell = {}
+
+---@class network
+sm.network = {}
+
+---@class storage
+sm.storage = {}
+
+---@class event
+sm.event = {}
+
+---@class log
+sm.log = {}
+
+---@class debugDraw
+sm.debugDraw = {}
+
+---@class ai
+sm.ai = {}
+
+---@class item
+sm.item = {}
+
+---@class challenge
+sm.challenge = {}
+
+---@class construction
+sm.construction = {}
+
+---@class menuCreation
+sm.menuCreation = {}
+
+---@class shape
+sm.shape = {}
+
+---@class body
+sm.body = {}
+
+---@class interactable
+sm.interactable = {}
+
+---@class joint
+sm.joint = {}
+
+---@class container
+sm.container = {}
+
+---@class quest
+sm.quest = {}
+
+---@class harvestable
+sm.harvestable = {}
+
+---@class character
+sm.character = {}
+
+---@class player
+sm.player = {}
+
+---@class unit
+sm.unit = {}
+
+---@class aiState
+sm.aiState = {}
+
+---@class areaTrigger
+sm.areaTrigger = {}
+
+---@class portal
+sm.portal = {}
+
+---@class lift
+sm.lift = {}
+
+---@class vec3
+sm.vec3 = {}
+
+---@class quat
+sm.quat = {}
+
+---@class uuid
+sm.uuid = {}
+
+---@class color
+sm.color = {}
+
+---@class raycastResult
+sm.raycastResult = {}
+
+---@class pathNode
+sm.pathNode = {}
+
+---@class pathfinder
+sm.pathfinder = {}
+
+---@class gui
+sm.gui = {}
+
+---@class widget
+sm.gui.widget = {}
+
+---@class guiInterface
+sm.gui.interface = {}
+
+---@class particle
+sm.particle = {}
+
+---@class effect
+sm.effect = {}
+
+---@class audio
+sm.audio = {}
+
+---@class localPlayer
+sm.localPlayer = {}
+
+---@class camera
+sm.camera = {}
+
+---@class render
+sm.render = {}
+
+---@class tool
+sm.tool = {}
+
+---@class visualization
+sm.visualization = {}
+
+---@class terrainTile
+sm.terrainTile = {}
+
+---@class terrainGeneration
+sm.terrainGeneration = {}
+
+---Extra values
+sm.isHost = false
+
 ---see if a object exists
 ---@param object any
 ---@return boolean exists
@@ -10,170 +178,6 @@ function sm.exists( object )
     return true
 end
 
----@class sm
-sm = sm()
-
----@class physics
-sm.physics = sm.physics()
-
----@class terrainData
-sm.terrainData = sm.terrainData()
-
----@class json
-sm.json = sm.json()
-
----@class noise
-sm.noise = sm.noise()
-
----@class util
-sm.util = sm.util()
-
----@class projectile
-sm.projectile = sm.projectile()
-
----@class melee
-sm.melee = sm.melee()
-
----@class game
-sm.game = sm.game()
-
----@class creation
-sm.creation = sm.creation()
-
----@class cell
-sm.cell = sm.cell()
-
----@class network
-sm.network = sm.network()
-
----@class storage
-sm.storage = sm.storage()
-
----@class event
-sm.event = sm.event()
-
----@class log
-sm.log = sm.log()
-
----@class debugDraw
-sm.debugDraw = sm.debugDraw()
-
----@class ai
-sm.ai = sm.ai()
-
----@class item
-sm.item = sm.item()
-
----@class challenge
-sm.challenge = sm.challenge()
-
----@class construction
-sm.construction = sm.construction()
-
----@class menuCreation
-sm.menuCreation = sm.menuCreation()
-
----@class shape
-sm.shape = sm.shape()
-
----@class body
-sm.body = sm.body()
-
----@class interactable
-sm.interactable = sm.interactable()
-
----@class joint
-sm.joint = sm.joint()
-
----@class container
-sm.container = sm.container()
-
----@class quest
-sm.quest = sm.quest()
-
----@class harvestable
-sm.harvestable = sm.harvestable()
-
----@class character
-sm.character = sm.character()
-
----@class player
-sm.player = sm.player()
-
----@class unit
-sm.unit = sm.unit()
-
----@class aiState
-sm.aiState = sm.aiState()
-
----@class areaTrigger
-sm.areaTrigger = sm.areaTrigger()
-
----@class portal
-sm.portal = sm.portal()
-
----@class lift
-sm.lift = sm.lift()
-
----@class vec3
-sm.vec3 = sm.vec3()
-
----@class quat
-sm.quat = sm.quat()
-
----@class uuid
-sm.uuid = sm.uuid()
-
----@class color
-sm.color = sm.color()
-
----@class raycastResult
-sm.raycastResult = sm.raycastResult()
-
----@class pathNode
-sm.pathNode = sm.pathNode()
-
----@class pathfinder
-sm.pathfinder = sm.pathfinder()
-
----@class gui
-sm.gui = sm.gui()
-
----@class widget
-sm.gui.widget = sm.gui.widget()
-
----@class guiInterface
-sm.gui.interface = sm.gui.interface()
-
----@class particle
-sm.particle = sm.particle()
-
----@class effect
-sm.effect = sm.effect()
-
----@class audio
-sm.audio = sm.audio()
-
----@class localPlayer
-sm.localPlayer = sm.localPlayer()
-
----@class camera
-sm.camera = sm.camera()
-
----@class render
-sm.render = sm.render()
-
----@class tool
-sm.tool = sm.tool()
-
----@class visualization
-sm.visualization = sm.visualization()
-
----@class terrainTile
-sm.terrainTile = sm.terrainTile()
-
----@class terrainGeneration
-sm.terrainGeneration = sm.terrainGeneration()
 ---Unknown Function?
 ---@param unknown network
 ---@param unknown2 string
