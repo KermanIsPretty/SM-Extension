@@ -4274,27 +4274,27 @@ function sm.game.getEnableAggro()
     return
 end
 
----Unknown Function?
----@param unknown string
----@param unknown2 table
----@param unknown3 string
----@param unknown4 string
-function sm.game.bindChatCommand( unknown, unknown2, unknown3, unknown4 )
+---Bind a chat command
+---@param name string
+---@param arguments table
+---@param callback string
+---@param defention string
+function sm.game.bindChatCommand( name, arguments, callback, defention )
     return
 end
 
----Unknown Function?
----@param unknown number | string
-function sm.game.setTimeOfDay( unknown )
+---Set the time of day using a number between 0.0 and 1.0
+---@param time number | string
+function sm.game.setTimeOfDay( time )
     return
 end
 
----Unknown Function?
+---Returns a number through 1.0 and 0.0
 function sm.game.getTimeOfDay()
     return
 end
 
----Unknown Function?
+---The diffucuilty between 1 and 2, 2 = normal, 1 = easy
 function sm.game.getDifficulty()
     return
 end
@@ -4422,64 +4422,65 @@ end
 ---@param callbackMethod string The function name in a world script.
 ---@param args table | string | number Optional arguments to be sent to the world script.
 function sm.event.sendToWorld( world, callbackMethod, args )
+1
     return
 end
 
----Unknown Function?
----@param unknown unknown
----@param unknown2 string
----@param unknown3 table | string | number
-function sm.event.sendToUnit( unknown, unknown2, unknown3 )
+---(Server Function) Send a event to a unit?
+---@param unit unit
+---@param event string
+---@param params table | string | number
+function sm.event.sendToUnit( unknown, event, params )
     return
 end
 
----Unknown Function?
----@param unknown unknown
----@param unknown2 string
----@param unknown3 table | string | number
-function sm.event.sendToPlayer( unknown, unknown2, unknown3 )
+---(Server Function) Send a event to a player
+---@param player player
+---@param event string
+---@param params table | string | number
+function sm.event.sendToPlayer( player, event, params )
     return
 end
 
----Unknown Function?
----@param unknown character
----@param unknown2 string
----@param unknown3 table | string | number
-function sm.event.sendToCharacter( unknown, unknown2, unknown3 )
+---(Server Function) Send a event to a character
+---@param character character
+---@param event string
+---@param params table | string | number
+function sm.event.sendToCharacter( character, event, params )
     return
 end
 
----Unknown Function?
----@param unknown harvestable
----@param unknown2 string
----@param unknown3 table | string | number
-function sm.event.sendToHarvestable( unknown, unknown2, unknown3 )
+---(Server Function) Send a event to a harvestabe
+---@param harvestable harvestable
+---@param event string
+---@param params table | string | number
+function sm.event.sendToHarvestable( harvestable, event, params )
     return
 end
 
----Unknown Function?
----@param unknown interactable
----@param unknown2 string
----@param unknown3 table | string | number
-function sm.event.sendToInteractable( unknown, unknown2, unknown3 )
+---(Server Function) Send a event to a interactable
+---@param interactable interactable
+---@param event string
+---@param params table | string | number
+function sm.event.sendToInteractable( interactable, event, params )
     return
 end
 
----Unknown Function?
----@param unknown string
-function sm.log.info( unknown )
+---Log info to SM
+---@param log string
+function sm.log.info( log )
     return
 end
 
----Unknown Function?
----@param unknown string
-function sm.log.warning( unknown )
+---Log a warning to SM
+---@param log string
+function sm.log.warning( log )
     return
 end
 
----Unknown Function?
----@param unknown string
-function sm.log.error( unknown )
+---Log a error to SM
+---@param log string
+function sm.log.error( log )
     return
 end
 
@@ -7177,15 +7178,15 @@ function sm.tool.preloadRenderables( unknown )
     return
 end
 
----Unknown Function?
----@param unknown tool
-function sm.tool.forceTool( unknown )
+---(Client Function) Force a player to use a tool.
+---@param tool tool
+function sm.tool.forceTool( tool )
     return
 end
 
 ---Unknown Function?
----@param unknown uuid
-function sm.tool.uuidExists( unknown )
+---@param uuid uuid
+function sm.tool.uuidExists( uuid )
     return
 end
 
