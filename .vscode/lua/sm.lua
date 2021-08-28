@@ -168,14 +168,24 @@ sm.terrainTile = {}
 ---@class terrainGeneration
 sm.terrainGeneration = {}
 
+---@class world
+sm.world = {}
+
 ---Extra values
 sm.isHost = false
+sm.version = "unknown"
 
 ---see if a object exists
 ---@param object any
 ---@return boolean exists
 function sm.exists( object )
     return true
+end
+
+---very straight forward
+---@return boolean
+function sm.isServerMode()
+    return false
 end
 
 ---Unknown Function?
@@ -7396,3 +7406,50 @@ end
 function sm.terrainGeneration.loadGameStorage( unknown )
     return
 end
+
+---Get world ID
+---@return integer
+function sm.world:getId()
+    return
+end
+
+---Delete a world
+function sm.world:destroy()
+    return
+end
+
+---Get the current main world?? - Unknown Function?
+---@return world value
+function sm.world.getCurrentWorld()
+    return    
+end
+
+---(Server Method) Create a world.
+---@param script string
+---@param name string
+---@param params table
+---@param seed number
+---@return world value
+function sm.world.createWorld( script, name, params, seed)
+    return
+end
+
+---(Server Method) Delete a world.
+---@param world world
+function sm.world.destroyWorld( world )
+    return
+end
+
+---(Server Method) Load a world.
+---@param world world
+function sm.world.loadWorld( world )
+    return
+end
+
+---Get a world id.
+---@param world world
+---@return integer|string value -- assumed.
+function sm.world.getId( world )
+    return 
+end
+
