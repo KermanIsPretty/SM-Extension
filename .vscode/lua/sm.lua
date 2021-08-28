@@ -4422,7 +4422,6 @@ end
 ---@param callbackMethod string The function name in a world script.
 ---@param args table | string | number Optional arguments to be sent to the world script.
 function sm.event.sendToWorld( world, callbackMethod, args )
-1
     return
 end
 
