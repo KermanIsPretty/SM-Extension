@@ -114,7 +114,7 @@ sm.portal = {}
 sm.lift = {}
 
 ---@class vec3
-sm.vec3 = { x = sm.vec3:getX(), y = sm.vec3:getY(), z = sm.vec3:getZ()}
+sm.vec3 = { x = 0, y = 0, z = 0 }
 
 ---@class quat
 sm.quat = {}
@@ -174,7 +174,7 @@ sm.terrainTile = {}
 sm.terrainGeneration = {}
 
 ---@class world
-sm.world = { id = sm.world:getId() }
+sm.world = { id = 0 }
 
 ---Extra values
 sm.isHost = false
