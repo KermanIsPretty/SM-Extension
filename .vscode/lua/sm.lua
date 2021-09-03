@@ -4618,15 +4618,18 @@ function sm.ai.getClosestVisibleTeamOpponent( unknown, unknown2 )
     return
 end
 
----Unknown Function?
-function sm.ai.getClosestVisibleCrop()
+---Get the closest crop to a unit
+---@param unit unit
+---@return vec3 location
+function sm.ai.getClosestVisibleCrop( unit )
     return
 end
 
----Unknown Function?
----@param unknown unknown
----@param unknown2 vec3
-function sm.ai.isReachable( unknown, unknown2 )
+---Is a location reachable from a units current location
+---@param unit unit
+---@param vec3 vec3
+---@return boolean canReach
+function sm.ai.isReachable( unit, vec3 )
     return
 end
 
