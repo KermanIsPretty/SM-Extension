@@ -3,7 +3,8 @@
 An extension to provide type support and some documentation to Visual Studio code for the modding aspect of [Scrap Mechanic](https://scrapmechanic.com/).
 
 # Contributors
- 1. [HardCoded](https://github.com/Kariaro) ([docs](https://kariaro.github.io/smdocs/) & [tracer](https://github.com/Kariaro/ScrapMechanicTracer))
+ 1. [HardCoded](https://github.com/Kariaro) - ([docs](https://kariaro.github.io/smdocs/) & [tracer](https://github.com/Kariaro/ScrapMechanicTracer))
+ 2. [TechnologicNick](https://github.com/TechnologicNick) - help with some function docs
 
 # How to install
 **Requirements**
