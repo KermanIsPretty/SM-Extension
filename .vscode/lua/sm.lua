@@ -64,6 +64,9 @@ function bit.ror(x, n) end
 function bit.bswap(x) end
 
 SurvivalGame = false
+ENABLE_FUTURE = false
+g_disableScrapHarvest = false
+FutureQuests = {}
 
 ---fix for stupid unknown
 ---@class class
@@ -154,9 +157,11 @@ sm.quest = {}
 sm.harvestable = {}
 
 ---@class character
+---@field worldPosition vec3
 sm.character = {}
 
 ---@class player
+---@field character character
 sm.player = {}
 
 ---@class unit
@@ -175,7 +180,10 @@ sm.portal = {}
 sm.lift = {}
 
 ---@class vec3
-sm.vec3 = { x = 0, y = 0, z = 0 }
+---@field x number
+---@field y number
+---@field z number
+sm.vec3 = {}
 
 ---@class quat
 sm.quat = {}
@@ -235,7 +243,14 @@ sm.terrainTile = {}
 sm.terrainGeneration = {}
 
 ---@class world
-sm.world = { id = 0 }
+---@field id number
+sm.world = {}
+
+---@class animations
+---@field animations any
+---@field blendSpeed number
+---@field currentAnimation any
+sm.animations = {}
 
 ---Extra values
 sm.isHost = false
@@ -254,35 +269,35 @@ function sm.isServerMode()
     return false
 end
 
----Unknown Function?
----@param unknown network
----@param unknown2 string
----@param unknown3 table | string | number
-function sm.network:sendToServer( unknown, unknown2, unknown3 )
+---(Client Method) Send a request to a server function
+---@param self network
+---@param callback string
+---@param params table | string | number
+function sm.network:sendToServer( self, callback, params )
     return
 end
 
----Unknown Function?
----@param unknown network
----@param unknown2 unknown
----@param unknown3 string
----@param unknown4 table | string | number
-function sm.network:sendToClient( unknown, unknown2, unknown3, unknown4 )
+---(Server Method) Send a request to a client function
+---@param self network
+---@param player player
+---@param callback string
+---@param params table | string | number
+function sm.network:sendToClient( self, player, callback, params )
     return
 end
 
----Unknown Function?
----@param unknown network
----@param unknown2 string
----@param unknown3 table | string | number
-function sm.network:sendToClients( unknown, unknown2, unknown3 )
+---(Server Method) Send a request to all clients, client function
+---@param self network
+---@param callback string
+---@param params table | string | number
+function sm.network:sendToClients( self, callback, params )
     return
 end
 
----Unknown Function?
----@param unknown network
----@param unknown2 table | string | number
-function sm.network:setClientData( unknown, unknown2 )
+---(Server Method) Set the current self.cl data
+---@param self network
+---@param data table | string | number
+function sm.network:setClientData( self, data )
     return
 end
 
@@ -301,15 +316,15 @@ function sm.network:__index( unknown, unknown2 )
 end
 
 ---Unknown Function?
----@param unknown storage
----@param unknown2 table | string | number
-function sm.storage:save( unknown, unknown2 )
+---@param location storage
+---@param data table | string | number
+function sm.storage:save( location, data )
     return
 end
 
 ---Unknown Function?
----@param unknown storage
-function sm.storage:load( unknown )
+---@param location storage
+function sm.storage:load( location )
     return
 end
 
@@ -6840,7 +6855,10 @@ function sm.gui.getKeyBinding( unknown )
 end
 
 ---Unknown Function?
-function sm.gui.setInteractionText()
+---@param string string
+---@param string1 string
+---@param string2 string
+function sm.gui.setInteractionText( string, string1, string2)
     return
 end
 
@@ -7487,6 +7505,17 @@ function sm.world:destroy()
     return
 end
 
+---(Server Method) Load a cell
+---@param world world
+---@param x number
+---@param y number
+---@param player player
+---@param params? table|string|any
+---@param callback string
+function sm.world:loadCell( world, x, y, player, callback, params)
+    return
+end
+
 ---Get the current main world?? - Unknown Function?
 ---@return world value
 function sm.world.getCurrentWorld()
@@ -7520,6 +7549,63 @@ end
 ---@return integer|string value -- assumed.
 function sm.world.getId( world )
     return 
+end
+
+---Create first person animations
+---@param tool any
+---@param data any
+---@return animations value
+function createFpAnimations( tool, data )
+    return
+end
+
+---Swap between two first person animations.
+---@param animations animations
+---@param before string
+---@param next string
+---@param time number
+function swapFpAnimation( animations, before, next, time )
+    return
+end
+
+---Update first person animations
+---@param animations animations
+---@param state boolean
+---@param dt number
+function updateFpAnimations(animations, state , dt)
+    return
+end
+
+---set first person animations
+---@param animations animations
+---@param state string
+---@param unknown number
+function setFpAnimation( animations, state, unknown)
+    return
+end
+
+---Create Third person animations
+---@param tool any
+---@param data any
+---@return animations value
+function createTpAnimations( tool, data )
+    return
+end
+
+---Update Third person animations
+---@param animations animations
+---@param state boolean
+---@param dt number
+function updateTpAnimations(animations, state , dt)
+    return
+end
+
+---set third person animations
+---@param animations animations
+---@param state string
+---@param unknown number
+function setTpAnimation( animations, state, unknown)
+    return
 end
 
 --All tool interact states.
