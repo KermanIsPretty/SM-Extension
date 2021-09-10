@@ -33,3 +33,12 @@ Open your mod folder or what scripts you want to edit.
 
 ## Questions?
 Contact me on discord: ``TwentyCharatersGreat#5716`` or [look me up](https://discord.id/)  using ``195930934480994304``
+
+# FAQ
+
+## I am missing some functions?
+You will need to add other libraries (see step 2 - 5).
+
+ 1. Util - ```<REPLACE WITH SM INSTALL PATH>\Survival\Scripts\util.lua```
+ 2. AnimationUtil (tools) - ```<REPLACE WITH SM INSTALL PATH>\Data\Scripts\game\AnimationUtil.lua```
+
