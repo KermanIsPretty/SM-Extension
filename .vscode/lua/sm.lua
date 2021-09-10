@@ -246,12 +246,6 @@ sm.terrainGeneration = {}
 ---@field id number
 sm.world = {}
 
----@class animations
----@field animations any
----@field blendSpeed number
----@field currentAnimation any
-sm.animations = {}
-
 ---Extra values
 sm.isHost = false
 sm.version = "unknown"
@@ -7549,63 +7543,6 @@ end
 ---@return integer|string value -- assumed.
 function sm.world.getId( world )
     return 
-end
-
----Create first person animations
----@param tool any
----@param data any
----@return animations value
-function createFpAnimations( tool, data )
-    return
-end
-
----Swap between two first person animations.
----@param animations animations
----@param before string
----@param next string
----@param time number
-function swapFpAnimation( animations, before, next, time )
-    return
-end
-
----Update first person animations
----@param animations animations
----@param state boolean
----@param dt number
-function updateFpAnimations(animations, state , dt)
-    return
-end
-
----set first person animations
----@param animations animations
----@param state string
----@param unknown number
-function setFpAnimation( animations, state, unknown)
-    return
-end
-
----Create Third person animations
----@param tool any
----@param data any
----@return animations value
-function createTpAnimations( tool, data )
-    return
-end
-
----Update Third person animations
----@param animations animations
----@param state boolean
----@param dt number
-function updateTpAnimations(animations, state , dt)
-    return
-end
-
----set third person animations
----@param animations animations
----@param state string
----@param unknown number
-function setTpAnimation( animations, state, unknown)
-    return
 end
 
 --All tool interact states.
