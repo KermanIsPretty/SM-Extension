@@ -1,3 +1,5 @@
+# **Project has been archived because the offical developers of this game releasing there own version!**
+
 # SM Exenstion for Lua Language Server
 
 An extension to provide type support and some documentation to Visual Studio code for the modding aspect of [Scrap Mechanic](https://scrapmechanic.com/).
